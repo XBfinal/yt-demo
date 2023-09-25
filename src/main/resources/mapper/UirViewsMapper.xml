@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xbfinal.mapper.UirViewsMapper">
+
+
+    <select id="findAllNum" resultType="com.xbfinal.entity.UirViews">
+        SELECT * FROM uirviews
+    </select>
+
+    <update id="addOneApi">
+        update uirviews set viewNum = viewNum+1 WHERE id=#{id}
+    </update>
+
+
+
+</mapper>
